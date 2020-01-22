@@ -9,13 +9,49 @@
 config_version=4
 
 _global_script_classes=[ {
+"base": "Camera2D",
+"class": "BattleCamera",
+"language": "GDScript",
+"path": "res://systems/combat/camera/BattleCamera.gd"
+}, {
 "base": "TileMap",
 "class": "BattleMap",
 "language": "GDScript",
 "path": "res://systems/combat/BattleMap.gd"
+}, {
+"base": "Node",
+"class": "CombatInstance",
+"language": "GDScript",
+"path": "res://systems/combat/CombatInstance.gd"
+}, {
+"base": "BattleCamera",
+"class": "DragCamera",
+"language": "GDScript",
+"path": "res://systems/combat/camera/DragCamera.gd"
+}, {
+"base": "BattleCamera",
+"class": "ScrollCamera",
+"language": "GDScript",
+"path": "res://systems/combat/camera/ScrollCamera.gd"
+}, {
+"base": "Resource",
+"class": "StatBlock",
+"language": "GDScript",
+"path": "res://systems/combat/units/StatBlock.gd"
+}, {
+"base": "Node2D",
+"class": "Unit",
+"language": "GDScript",
+"path": "res://Unit.gd"
 } ]
 _global_script_class_icons={
-"BattleMap": ""
+"BattleCamera": "",
+"BattleMap": "",
+"CombatInstance": "",
+"DragCamera": "",
+"ScrollCamera": "",
+"StatBlock": "",
+"Unit": ""
 }
 
 [application]
@@ -23,6 +59,10 @@ _global_script_class_icons={
 config/name="openTRPG"
 run/main_scene="res://assets/settings/scenes/Combat.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Combat="*res://systems/combat/Combat.gd"
 
 [rendering]
 

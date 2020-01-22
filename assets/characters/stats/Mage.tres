@@ -1,0 +1,10 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://systems/combat/units/StatBlock.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+spirit = 3
+agility = 1
+might = 1
+level = 1
